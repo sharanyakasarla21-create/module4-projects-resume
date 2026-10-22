@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Sharanya Kasarla</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #172033;
+      line-height: 1.6;
+    }
+    header {
+      background: #172554;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    header h2 { margin: 0; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    main { max-width: 1050px; margin: auto; padding: 24px; }
+    section {
+      background: white;
+      padding: 28px;
+      margin: 22px 0;
+      border-radius: 14px;
+      box-shadow: 0 4px 18px #0000000c;
+    }
+    .hero { text-align: center; padding: 48px 24px; }
+    .hero h1 { font-size: 36px; margin-bottom: 8px; }
+    .muted { color: #536176; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      padding: 20px;
+      border: 1px solid #dce3ee;
+      border-radius: 12px;
+      background: #fbfdff;
+    }
+    .card h3 { margin-top: 0; }
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 7px;
+      margin: 5px 5px 5px 0;
+    }
+    .button:hover { background: #1d4ed8; }
+    footer {
+      text-align: center;
+      background: #172554;
+      color: white;
+      padding: 22px;
+    }
+    @media (max-width: 600px) {
+      header { align-items: flex-start; flex-direction: column; }
+      main { padding: 12px; }
+      section { padding: 20px; }
+      .hero h1 { font-size: 29px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Sharanya Kasarla</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#resume">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <h1>Hello, I'm Sharanya!</h1>
+      <h3>Aspiring Software Developer</h3>
+      <p class="muted">
+        I am a BCA student interested in software development,
+        web technologies, networking, and cybersecurity.
+      </p>
+      <a class="button" href="#projects">View My Projects</a>
+      <a class="button" href="#resume">View My Resume</a>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <p class="muted">Projects I have worked on and learned from.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>JavaScript Features Website</h3>
+          <p>
+            A responsive website demonstrating mobile navigation,
+            dark and light mode, scroll animations, smooth scrolling,
+            and contact form validation.
+          </p>
+          <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+          <a class="button"
+             href="https://github.com/sharanyakasarla21-create/module3-javascript-features"
+             target="_blank" rel="noopener noreferrer">
+            View GitHub Project
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Auto Water Pump Switcher</h3>
+          <p>
+            An academic project concept designed to automate
+            water pump operation and help manage water levels.
+          </p>
+          <p><strong>Type:</strong> Academic Project</p>
+          <p class="muted">
+            Add a project link here when your code or documentation
+            is available online.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p>Vaagdevi Degree and PG College</p>
+          <p class="muted">2024–2027 | Currently pursuing</p>
+        </article>
+        <article class="card">
+          <h3>Intermediate</h3>
+          <p>Sri Chaitanya Junior College</p>
+          <p class="muted">2023–2024</p>
+        </article>
+        <article class="card">
+          <h3>10th Class</h3>
+          <p>MJP BC Welfare Maripeda</p>
+          <p class="muted">2022</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2>My Resume</h2>
+      <p>
+        Download my resume to learn more about my education,
+        skills, and projects.
+      </p>
+      <a class="button" href="resume.pdf" download>
+        Download Resume (PDF)
+      </a>
+      <p class="muted">
+        Place your actual resume PDF in the same folder as index.html
+        and name the file resume.pdf.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Sharanya Kasarla | Portfolio Website</p>
+  </footer>
+</body>
+</html>
